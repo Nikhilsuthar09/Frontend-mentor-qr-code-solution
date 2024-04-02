@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+.qr-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card {
+  height: 497px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.image {
+  height: 288px;
+  width: 288px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.textbox {
+  width: 288px;
+  height: 130px;
+  text-align: center;
+
+  margin-top: 16px;
+}
+.textbox h3 {
+  color: hsl(218, 44%, 22%);
+  padding: 0px 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.textbox p {
+  color: #7d889e;
+  font-weight: 400;
+  padding: 0px 15px;
+  font-size: 15px;
+}
+@media screen and (max-width: 450px) {
+  .card {
+    width: 300px;
+    height: 470px;
+  }
+  .image {
+    height: 270px;
+    width: 270px;
+  }
+  .textbox h3 {
+    font: size 15px;
+    padding: 0px 15px;
+  }
+  .textbox p {
+    font-size: 13px;
+    padding: 0px 15px;
+  }
+}
